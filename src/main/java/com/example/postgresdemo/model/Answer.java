@@ -10,6 +10,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name = "answers")
 public class Answer extends AuditModel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(generator = "answer_generator")
 	@SequenceGenerator(
